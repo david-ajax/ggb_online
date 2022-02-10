@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>GeoGebra 在线版本 | Wang Zhiyu</title>
+	<title>GeoGebra 6 在线版 | Wang Zhiyu</title>
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -88,8 +88,8 @@
 
 		var parameters = {
 			"id": "ggbApplet",
-			"width": window.innerWidth * 1.0,
-			"height": window.innerHeight * 1.0,
+			"width": window.innerWidth,
+			"height": window.innerHeight
 			"autoHeight": true,
 			"useBrowserForJS": true,
 			"enableLabelDrags": true,
@@ -98,7 +98,7 @@
 			"showMenuBar": true,
 			"showAlgebraInput": true,
 			"showToolBar": true,
-			"showFullscreenButton": false,
+			"showFullscreenButton": true,
 			"disableAutoScale": true,
 			"borderColor": "white",  //去掉外边框颜色
 			"language": "zh",
@@ -135,20 +135,11 @@
 		<a id="save" href="javascript:saveGgbFile()" border='1'>保存Base64</a>
 		<script src="src/adapter1.js"></script>
 		<a id="load" href="javascript:loadGgbFile()">导入Base64</a>
+		<script src="src/adapter1.js"></script>
 		<textarea name="Base64" id="Base64" cols=50 rows=1 style="resize:none;"></textarea>
 		<script src="src/adapter1.js"></script>
 	</div><br>
-	<script src="src/adapter2.js"></script>
 	<script src="src/adapter1.js"></script>
-	注意: 网页版 GeoGebra 计算能力略低于桌面版与移动版, 你的浏览器性能决定了计算性能<br>
-	建议使用 Chromium 与 Firefox 浏览器浏览此页面<br>
-	所有数据都保存在本地(登录后的数据可能会保存在 GeoGebra 的服务器中), 刷新后数据可能会清零, 请及时保存<br>
-	此页面并非 GeoGebra 的官方页面<br>
-	此程序不含任何担保与额外支持, 亦不承担任何责任<br>
-	核心源代码来自 GeoGebra 项目<br>
-	程序移植: @zbzhen <br>
-	网页制作与网站所有者: @david-ajax(王祉雨)<br>
-	此页面的源代码已托管至 GitHub<br>
 </body>
 
 </html>
